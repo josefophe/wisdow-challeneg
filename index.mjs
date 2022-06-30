@@ -19,7 +19,9 @@ const iBalance = toAU(1000);
 const showBalance = async (acc) => console.log(`Your balance is ${toSU(await stdlib.balanceOf(acc))} ${suStr}.`);
 
 
-const commonInteract = {};
+const commonInteract = {
+  reportCancellation: () => { console.log(`The buyer cancelled the order.`); }
+};
 
 // Seller
 if (role === 'seller') {
