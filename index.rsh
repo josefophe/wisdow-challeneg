@@ -1,7 +1,7 @@
 'reach 0.1';
 
 const commonInteract = {
-  reportCancellation: Fun([], Null)
+  reportCancellation: Fun([], Null),
   reportTransfer: Fun([UInt], Null),
   reportPayment: Fun([UInt], Null),
 };
