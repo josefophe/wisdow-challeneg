@@ -20,7 +20,7 @@ const showBalance = async (acc) => console.log(`Your balance is ${toSU(await std
 
 
 const commonInteract = {
-  reportCancellation: () => { console.log(`The buyer cancelled the order.`); }
+  reportCancellation: () => { console.log(`${role == 'buyer' ? 'You' : 'The buyer'} cancelled the order.`); }
 };
 
 // Seller
