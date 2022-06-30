@@ -1,3 +1,4 @@
 build/
 # ignoring reach executable file 
 reach
+.reach/

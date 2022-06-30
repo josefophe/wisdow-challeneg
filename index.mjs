@@ -12,14 +12,13 @@ console.log(`Your role is ${role}`);
 const stdlib = loadStdlib(process.env);
 console.log(`The consensus network is ${stdlib.connector}.`);
 
+const suStr = stdlib.standardUnit;
 const toAU = (su) => stdlib.parseCurrency(su);
 const toSU = (au) => stdlib.formatCurrency(au, 4);
 const iBalance = toAU(1000);
 const showBalance = async (acc) => console.log(`Your balance is ${toSU(await stdlib.balanceOf(acc))} ${suStr}.`);
-console.log(`Balance is ${suBal} ${suStr}`);
-const auBal = toAU(suBal);
-console.log(`Balance is ${auBal} ${auStr}`);
-console.log(`Balance is ${toSU(auBal)} ${suStr}`);
+
+
 const commonInteract = {};
 
 // Seller
