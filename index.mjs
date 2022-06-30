@@ -15,13 +15,21 @@ const toAU = (su) => stdlib.parseCurrency(su);
 const toSU = (au) => stdlib.formatCurrency(au, 4);
 const iBalance = toAU(1000);
 const showBalance = async (acc) => console.log(`Your balance is ${toSU(await stdlib.balanceOf(acc))} ${suStr}.`);
-
+console.log(`Balance is ${suBal} ${suStr}`);
+const auBal = toAU(suBal);
+console.log(`Balance is ${auBal} ${auStr}`);
+console.log(`Balance is ${toSU(auBal)} ${suStr}`);
 const commonInteract = {};
 
 // Seller
 if (role === 'seller') {
     const sellerInteract = {
       ...commonInteract,
+      price: toAU(5),
+      reportReady: async (price) => {
+        console.log(`Your wisdom is for sale at ${toSU(price)} ${suStr}.`);
+        console.log(`Contract info: ${JSON.stringify(await ctc.getInfo())}`);
+    },
     };
 
     const acc = await stdlib.newTestAccount(iBalance);
