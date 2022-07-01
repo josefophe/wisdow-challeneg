@@ -14,4 +14,14 @@ For youtube walkthroughs
 
 a. Step 6: refining code output
 
-b. 
+
+![Step6](https://github.com/josefophe/wisdow-challenge/raw/main/assets/s6wfs.png "Display Balance for seller and buyer")
+
+
+b. Step 9: interact code output
+
+![Step9](https://github.com/josefophe/wisdow-challenge/raw/main/assets/s9wfs.png "Display interaction between seller and buyer")
+
+c. Step 12: final code output
+
+![Step12](https://github.com/josefophe/wisdow-challenge/raw/main/assets/finalcodewfs.png "Display successful transaction between seller and buyer")
