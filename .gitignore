@@ -1,4 +1,5 @@
 build/
+.DS_Store
 # ignoring reach executable file 
 reach
 .reach/
